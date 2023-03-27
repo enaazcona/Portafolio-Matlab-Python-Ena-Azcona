@@ -1,3 +1,5 @@
+%%Code of practice created in the course Introduction to Analysis of Data, Signals, and Images with MATLAB from Vanderbilt University
+
 function edge_mag = SobelMagnitude(img)
 % Use fspecial to generate the horizontal and vertical Sobel filters (sh and sv)
 img= im2double(img)
