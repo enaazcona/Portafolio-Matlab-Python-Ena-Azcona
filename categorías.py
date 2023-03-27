@@ -1,4 +1,4 @@
-"This is the code I used to classify the images of the Cup."
+
 
 import cv2
 import os
