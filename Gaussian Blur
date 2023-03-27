@@ -1,3 +1,4 @@
+%%Code of practice created in the course Introduction to Analysis of Data, Signals, and Images with MATLAB from Vanderbilt University
 function [img_filt,filt] = GaussianBlur(img,sigma)
 % Use fspecial to generate the Gaussian filter
 W=ceil(6*sigma);
