@@ -1,3 +1,4 @@
+%%Code of practice created in the course Introduction to Analysis of Data, Signals, and Images with MATLAB from Vanderbilt University
 function [msk,thrsh] = OtsuThreshold(img)
 % Define the Otsu threshold 'thrsh' using the histogram of img
 thrsh=otsuthresh(imhist(img))*255;
