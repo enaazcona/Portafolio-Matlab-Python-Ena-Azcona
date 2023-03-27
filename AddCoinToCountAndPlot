@@ -1,3 +1,5 @@
+%%Code of practice created in the course Introduction to Analysis of Data, Signals, and Images with MATLAB from Vanderbilt University
+
 function [coinvalue,x_plot,y_plot,col] = AddCoinToPlotAndCount(x,y,cls)
 % initialize radians for defining x_plot and y_plot using cos and sin functions
 rads = 0:2*pi/32:2*pi;
