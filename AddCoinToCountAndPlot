@@ -1,0 +1,37 @@
+function [coinvalue,x_plot,y_plot,col] = AddCoinToPlotAndCount(x,y,cls)
+% initialize radians for defining x_plot and y_plot using cos and sin functions
+rads = 0:2*pi/32:2*pi;
+% initialize parameters for radius and color of circle for each type of coin
+RadiusDIME =22
+RadiusNICKEL =30
+RadiusQUARTER =40
+% use if-elseif statement to define x_plot, y_plot, col
+%   when cls is 1, we found a dime
+%   when cls is 2, we found a nickel
+%   when cls is 3, we found a quarter
+if(cls==1) 
+    coinvalue=10; 
+    x_plot= x+(RadiusDIME*cos(rads)); 
+    y_plot= y+(RadiusDIME*sin(rads)); 
+    col='r'; 
+elseif(cls==2) 
+    coinvalue=5; 
+    x_plot= x+(RadiusNICKEL*cos(rads)); 
+    y_plot= y+(RadiusNICKEL*sin(rads)); 
+    col='g'; 
+else 
+    coinvalue=25; 
+    x_plot= x+(RadiusQUARTER*cos(rads)); 
+    y_plot= y+(RadiusQUARTER*sin(rads)); 
+    col='m'; 
+end
+
+plot(x_plot,y_plot,col);
+end
+
+x=1.2;
+y=4.1;
+cls = 3;
+[coinvalue,x_plot,y_plot,col] = AddCoinToPlotAndCount(x,y,cls)
+figure
+plot(x_plot,y_plot,[col,'o-'])
