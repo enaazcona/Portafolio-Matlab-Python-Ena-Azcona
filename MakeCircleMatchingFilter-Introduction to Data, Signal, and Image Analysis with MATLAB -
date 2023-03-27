@@ -1,3 +1,4 @@
+%%Code of practice created in the course Introduction to Analysis of Data, Signals, and Images with MATLAB from Vanderbilt University
 function [filter,xc,yc] = MakeCircleMatchingFilter(diameter,W)
 % initialize filter
 filter = zeros(W,W);
